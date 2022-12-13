@@ -1,18 +1,18 @@
 :root {
-  --font-sans: "sans-serif";
-  --font-serif: serif;
+  --font-sans: "bilo" , "sans-serif" ;
+  --font-serif: "dejanire-headline", serif;
   --font-base: 1rem;
   --font-scale: 1.25;
   --font-size-1: var(--font-base);
-  --font-size-2: calc( var(--font-size-1) * var(--font-scale) );
+  --font-size-2: calc( var(--font-size-1) * var(--font-scale));
   --font-size-3: calc( var(--font-size-2) * var(--font-scale));
   --font-size-4: calc( var(--font-size-3) * var(--font-scale));
   --font-size-5: calc( var(--font-size-4) * var(--font-scale));
   --font-size-6: calc( var(--font-size-5) * var(--font-scale));
-  --color-accent: cadetblue;
+  --color-accent: #E259AE;
   --color-light: #fff;
-  --color-medium: #666;
-  --color-dark: #333;
+  --color-medium: #192C21;
+  --color-dark: #0F1E15;
   --section-gap: 8rem;
   --section-gap-inner: calc( var(--section-gap) * 0.75);
   --section-gap-inner-small: calc( var(--section-gap) * 0.5);
@@ -24,6 +24,11 @@
   --menu-height: 100px;
   --grid-container: minmax(var(--page-padding), 1fr) [inner-start] minmax(0,var(--page-width)) [inner-end] minmax(var(--page-padding), 1fr);
   --grid-content: repeat(12, 1fr);
+}
+@media screen and (max-width: 240px) {
+  :root {
+    --page-padding: 15px;
+  }
 }
 
 * {
