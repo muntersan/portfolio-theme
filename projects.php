@@ -45,7 +45,7 @@ Template Name: Projects
 
                     </div>
 
-                    <button class="button"><a href="http://portfolio.local/contact/" class="button__link">Work with me</a></button>
+                    <button class="button"><a href="https://www.juliamunters.com/contact/" class="button__link">Work with me</a></button>
                     
                 </div>
 

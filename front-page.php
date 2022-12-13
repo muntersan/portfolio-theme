@@ -22,7 +22,7 @@ Template Name: front page
                 <div class="about__content">
                     <h2 class="about__title">Hi! I’m <span class="accent">Julia</span>,</h2>
                     <p class="about__text">a Berlin-based web- design and development student! I am specializing in Front-End and enjoy creating personalized responsive websites.</p>
-                    <button class="button"><a href="http://portfolio.local/projects/" class="button__link">Take a look at my work!</a></button>
+                    <button class="button"><a href="https://www.juliamunters.com/projects/" class="button__link">Take a look at my work!</a></button>
                 </div>
 
             </div>
