@@ -34,7 +34,7 @@
 </div>
 
 <script src=" <?php echo get_template_directory_uri( ); ?> /js/menu.js"></script>
-<script src=" <?php echo get_template_directory_uri( ); ?> /js/header.js "></script>
+<script src=" <?php echo get_template_directory_uri( ); ?> /js/header.js"></script>
 
 <?php wp_footer(); ?>
 </body>
