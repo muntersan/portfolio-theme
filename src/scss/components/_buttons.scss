@@ -1,5 +1,5 @@
 
-@mixin standard($background: var(--color-accent), $color: var(--color-light), $border-radius: 10px, $hover: var(--color-medium), $hover-text: var(--color-accent) ) {
+@mixin standard($background: var(--color-medium), $color: var(--color-light), $border-radius: 50px, $hover: var(--color-medium), $hover-text: var(--color-accent) ) {
     background-color: $background;
     color: $color;
     display: inline-block;

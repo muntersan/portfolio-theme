@@ -1,0 +1,10 @@
+.hero-background{
+    min-width: 100vw;
+    min-height: 50vh;
+    overflow: hidden;
+    object-fit: cover;
+
+    @include responsive.max(300px){
+        display: none;
+    }  
+}

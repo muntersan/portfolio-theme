@@ -1,6 +1,8 @@
+@use '../tools/responsive';
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-sans);
+    font-family: var(--font-serif);
+    color: var(--color-light);
 }
 
 h1 {
@@ -8,19 +10,40 @@ h1 {
 }
 
 h2 {
-    font-size: var(--font-size-5);
+    font-size: 3.75rem;
+    font-weight: 400;
+    margin: 0;
+
+    @include responsive.max(1100px){
+        font-size: var(--font-size-6);
+    }
+
+    @include responsive.max(800px){
+        font-size: var(--font-size-4);
+    }
 }
 
 h3 {
-    font-size: var(--font-size-4);
+    font-size: 3rem;
+    font-weight: 300;
+
+    @include responsive.max(1100px){
+        font-size: var(--font-size-5);
+    }
+
+    @include responsive.max(800px){
+        font-size: var(--font-size-4);
+    }
 }
 
 h4 {
     font-size: var(--font-size-3);
+    font-weight: 200;
 }
 
 h5 {
     font-size: var(--font-size-2);
+    font-weight: 400;
 }
 
 h6 {
@@ -29,5 +52,12 @@ h6 {
 
 p, a, li {
     line-height: 1.5;
-    font-family: var(--font-serif);
+    font-family: var(--font-sans);
+    color: var(--color-light);
+    font-size: var(--font-size-2);
+
+
+    @include responsive.max(800px){
+        font-size: var(--font-size-1);
+    }
 }

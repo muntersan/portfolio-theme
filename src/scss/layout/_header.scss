@@ -1,0 +1,34 @@
+@use '../tools/responsive';
+
+.site-header{
+    position: absolute;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 999;
+    
+    &__inner{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 70px;
+        margin: 0 var(--page-padding) 0 var(--page-padding);
+
+        .branding-link{
+            height: 40px;
+            width: 40px;
+        }
+
+        .branding{
+            height: 40px;
+        }
+    }
+}
+
+.site-header--scrolled{
+
+    @include responsive.max(600px){
+        background-color: var(--color-dark);
+    }
+}

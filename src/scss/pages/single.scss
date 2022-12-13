@@ -1,0 +1,14 @@
+.single__hero{
+    height: 100px;
+}
+
+.single__post{
+    grid-area: 1/2/2/12;
+
+    @include responsive.max(400px){
+        grid-area: 1 / 1 / 2 / 13;
+
+    }
+
+    
+}
