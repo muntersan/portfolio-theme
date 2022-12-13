@@ -1,0 +1,89 @@
+@use '../tools/responsive';
+
+.menu {
+    background: var(--color-dark);
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 998;
+    /* display: none; */
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.menu--opened {
+    /* display: flex; */
+    visibility: visible;
+    opacity: 1;
+}
+
+.menu__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu__list li {
+    margin: 1rem 0;
+}
+
+.menu__list li a {
+    color: var(--color-light);
+    font-family: var(--font-serif);
+    font-size: var(--font-size-5);
+    text-decoration: none;
+
+    @include responsive.max(1100px){
+        font-size: var(--font-size-4);
+    }
+
+    @include responsive.max(800px){
+        font-size: var(--font-size-3);
+    }
+}
+
+.menu-button{
+    border: 0;
+    padding: 0;
+    height: 40px;
+    width: 35px;
+    background: none;
+    cursor: pointer;
+
+    &__hamburger{
+        height: 2px;
+        width: 100%;
+        background: var(--color-light);
+        position: relative;
+
+        &::before, &::after{
+            content: '';
+            height: 2px;
+            width: 100%;
+            background: var(--color-light);
+            position: absolute;
+            left: 0;
+            transition: all 0.3s;
+        }
+
+        &::before {
+            top: -11px;
+        }
+        
+        &::after {
+            top: 11px;
+        } 
+    }
+}
+
+
+.menu-button--close .menu-button__hamburger::before,
+.menu-button--close .menu-button__hamburger::after {
+    top: 0;
+}
